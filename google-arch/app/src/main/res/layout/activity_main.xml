@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <data>
+        <variable
+            name="viewModel"
+            type="sample.teresa.com.google_arch.googlearch.viewmodel.WeatherViewModel"/>
+
+        <!--<variable-->
+            <!--name="weatherInfo"-->
+            <!--type="sample.teresa.com.google_arch.googlearch.model.WeatherInfo"/>-->
+
+        <variable
+            name="user"
+            type="sample.teresa.com.google_arch.googlearch.model.User"/>
+    </data>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@android:color/white">
+
+        <Button
+            android:id="@+id/back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="返回"/>
+
+        <Button
+            android:id="@+id/get_weather_info"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="获取天气信息"
+            />
+
+        <TextView
+            android:id="@+id/city"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+
+        <TextView
+            android:text="@{user.name}"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+
+</layout>
